@@ -1,0 +1,180 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(205, 205, 205);
+    font-size: 13px;
+    font-family: Barlow Semi Condensed;
+    display: flex;
+    flex-direction: column;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#card {
+    padding: 25px;
+    height:100%;
+    width: 100%;
+    margin: 10px;
+
+}
+
+#Daniel{
+ background-color: hsl(263, 55%, 52%);
+ color: white;
+ flex-direction: column;
+ position: relative;
+ z-index: 0;
+}
+
+
+#Jonathan{
+ background-color: hsl(217, 19%, 35%);
+ color: white;
+}
+
+#Jeanette{
+background-color: white;
+color: black;
+}
+
+#Patrick{
+background-color: hsl(219, 29%, 14%);
+color: white;
+}
+
+#Kira{
+background-color: white;
+color: black;
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 6px 2px 7px 0px rgba(0,0,0,0.44);
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-weight: 600px;
+    font-size: 1.3rem;
+}
+
+p {
+    font-weight: 500px;
+    opacity: 70%;
+}
+
+img {
+    border-radius: 50px;
+    margin: 10px;
+    border: 1px solid purple;
+}
+
+#content-header {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+#content-header p {
+    font-size: 0.8rem;
+    z-index: 2;
+    position: relative;
+}
+
+#content > h4 {
+    z-index: 2;
+}
+
+#quote {
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    z-index: 1;
+}
+@media  (min-width: 375px) {
+    .grid-item {
+        margin-bottom: 0px;
+        margin: 5px;
+    }
+    
+    #card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        align-self: center;
+    }
+
+    #main-left {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 75%;
+
+    }
+
+    #main-left-top {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Daniel{
+        color: white;
+        flex-basis: 65%;
+        flex-grow: 1;
+       }
+
+    #Jonathan{
+        color: white;
+        flex-basis: 35%;
+        flex-grow: 1;
+       }
+
+
+    #main-left-bottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Jeanette{
+        color: black;
+        flex-basis: 35%;
+        flex-grow: 1;
+    }
+    
+    #Patrick{
+        color: white;
+        flex-basis: 65%;
+        flex-grow: 1;
+
+    }
+
+    #main-right {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 23%;
+        padding: 10px;
+    }
+
+    #main-left, #main-right {
+        height: auto;
+    }
+
+}
